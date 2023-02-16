@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">    
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <title>Portfolio Pi Reyes</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
 		<div></div>
-		<picture>
-			<img src="img/personal/logo.svg" alt="Pi Logo" >
-		</picture>
 			<nav>
-				<ul>
-				<li><a href="index.html">Work</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<ul style="list-style: none;">
+					<li><a href="index.html" class="links">Work</a></li>
+				<li><a href="about.html" class="links">About</a></li>
+				<li><a href="#contact" class="links">Contact</a></li>
 				</ul>
 			</nav>
 	</header>	
 	<main>
 	<div>
 		<div>
-		<h1>Hi, my name is Pi Reyes!</h1>
-		<p>As a UI designer and self-taught digital artist, 
-			I am fueled by creativity and passion!</p>
+			<picture>
+				<source srcset="img/personal/intro.svg" media="(max-width:767px)"> 
+  <img src="img/personal/intro.svg" class="intro" alt="intro" width="400"height="400">
+			</picture>
+			<style> 
+				.intro { 
+				  margin-top: 50px; /* create a 50px space between the image and the top of its container */ 
+				  padding: 10px;
+				} 
+			  </style> 
 		</div>
+		<picture>
+			<source srcset="img/personal/arrow.svg" media="(max-width:767px)"> 
+<img src="img/personal/arrow.svg" class="arrow" alt="arrow" width="200" height="200">
+		</picture>
+		<style> 
+			.arrow { 
+			  margin-top: 20px; /* create a 50px space between the image and the top of its container */ 
+			} 
+		  </style> 
 	</div>
 		<div>
 	 <h2>My Work</h2>
 		<div>
 			<picture>
 				<source srcset="img/soy_vegan/soy_vegan_mockup.svg" media="(max-width:767px)"> 
-  <img src="img/soy_vegan/soy_vegan_mockup.svg" alt="Soy Vegan Mockup">
+  <img src="img/soy_vegan/soy_vegan_mockup.svg" class="soy mockup" alt="Soy Vegan Mockup">
 			</picture>
 		</div>
 		<div>
 			<h3>Soy Vegan</h3>
 		<p>Soy Vegan is a responsive web app that serves as an educational tool
 		   for cooks of all skill levels.</p>
-		   <a href="soy_vegan.html">View Project</a>
+		  <a href="soy_vegan.html" class="button project">View Project</a>
 		</div>
 		<div>
 			<picture>
 				<source srcset="img/transcend/transcend_mockup.svg" media="(max-width:767px)">
-  <img src="img/transcend/transcend_mockup.svg" alt="Transcend Mockup">
+  <img src="img/transcend/transcend_mockup.svg" class="transcend mockup" alt="Transcend Mockup">
 		</picture>
 	</div>
 	<div>
 		<h3>Transcend</h3>
 		<p>Transcend is a mobile fitness app created for the trans and nonbinary community.
 		</p>
-		<a href="#">View Project</a>
+		<a href="#" class="button project">View Project</a>
 	</div>
 </div>
 	</main>
 	<footer id="contact">
 		<div>
-			<h2>Get in touch</h2>
-<p>
+	<h4>Get in touch</h4>
   Do you like my work and want to discuss opportunities?
-  Please get in touch! 
-  <br>Call: <a href="tel:+8568705507">856-870-5507<br></a>
-  <br>Prefer sending an email?<br>
-  <a href="">Email me</a></p>
+  Please get in touch!<br>
+  Call: <a href="tel:+8568705507" class="number">856-870-5507</a>
+  <br>Prefer sending an email?
+  <a href="pi.reyes03@gmail.com" class="button contact"> SEND ME AN EMAIL</a>
+</p>
 			<div>
 				<a href="https://twitter.com/copypi" target="blank">
 					<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>

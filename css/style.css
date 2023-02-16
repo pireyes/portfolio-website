@@ -1,0 +1,147 @@
+/*
+Colors used:
+Primary Color (Blue): #05676e;
+Secondary Color (Green): #489c79;
+*/
+
+body {
+    background-color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #ffffff;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 700;
+  }
+
+  .hello { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75em;
+    font-weight: 100;
+    color: #ffffff 
+  }
+  .world { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75em;
+    font-weight: 700;
+    color: #ffffff 
+  }
+  h1 {
+    width: 50%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: red;
+    text-decoration: none; /* No underlining */
+  }
+  a:visited { /* visited link */
+    color: #ffffff;
+  }
+  a:hover {
+    color: red;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+a:active { /* selected link */
+  color: #994c30;
+}
+a:hover,
+a:focus {
+  color:red;
+  text-decoration: underline;
+}
+  .button.project {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: white;
+    color: black; /* needed to override the default link color */
+    font-weight: 400px;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid black; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button.project:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  .button.contact {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid white;
+    border-bottom: 2px solid gray;
+  }
+  .button.contact:hover {
+    opacity: 0.8;
+   text-decoration: none;
+  }
+
+    .number {
+      font-weight:bold;
+      color: white;
+    }
+  
+ .links {
+    float:right; 
+    font-weight: 500px;
+    padding: 10px;
+}
+.button.resume {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: white;
+  color: black; /* needed to override the default link color */
+  font-weight: 400px;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid black; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button.resume:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.resume {
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid white;
+  border-bottom: 2px solid gray;
+}
+.button.resume:hover {
+  opacity: 0.8;
+ text-decoration: none;
+}
+
