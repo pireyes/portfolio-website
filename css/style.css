@@ -9,7 +9,7 @@ Secondary Color (Green): #489c79;
 body {
     background-color: #111111;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #ffffff;
@@ -64,24 +64,26 @@ a:focus {
     background-color: white;
     color: black; /* needed to override the default link color */
     font-weight: 400px;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid black; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
+    transition-duration: 0.2s;
+}
   .button.project:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+    opacity: 0.8;
   }
   .button.contact {
-    background-color: transparent;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: white;
+    color: black; /* needed to override the default link color */
+    font-weight: 400px;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border: 2px solid white;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black; /* width of the border, type, color */
+    transition-duration: 0.2s;
   }
   .button.contact:hover {
     opacity: 0.8;
@@ -99,21 +101,10 @@ a:focus {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid black; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
+  transition-duration: 0.2s;}
 .button.resume:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-}
-.button.resume {
-  background-color: transparent;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 3px;
-  border: 2px solid white;
-  border-bottom: 2px solid gray;
 }
 .button.resume:hover {
   opacity: 0.8;
@@ -134,7 +125,6 @@ a:focus {
     text-align: center;
     padding: 10px 0;
     position: sticky;
-    box-shadow: 0 -6px 10px 5px rgba(255, 255, 255, 0.915);
 }
   nav > ul {
     list-style-type: none;
@@ -152,6 +142,11 @@ a:focus {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
   margin: 0;
@@ -164,4 +159,89 @@ a:focus {
     text-align: center;
     width: 100%;
   }
+  #hero span {
+    display: block;
+  }
+  #about
+  h3 { margin-top: 0;}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) { 
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+}
+.col-md-7 {
+  width: 50%;
+}
+.col-md-5 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+} 
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
