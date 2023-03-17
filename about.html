@@ -12,15 +12,20 @@
 <script src="https://kit.fontawesome.com/3ecedacda5.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-		<nav>
-			<ul>
+	<header>
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+			<nav>
+				<ul>
 				<li><a href="index.html" class="links">Home</a></li>
 				<li><a href="about.html" class="links">About</a></li>
-				<li><a href="#contact" class="links">Contact</a></li>
-				</ul>
-		</nav>
-</header>	
+				<li><a href="#contact" class="links" onclick="menuToggle()">Contact </a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>				
+			</ul>
+			</nav>
+			</div>
+			</div>
+	</header>
 	<main>
 <div id="about">
 			<div class="container">
@@ -81,7 +86,7 @@
 	</div><!--end container-->
 	</div><!--end work-->
 	</div><!--end about-->
-
+</div>
 	</main>
 	<footer id="contact">
 			<div class="container">
