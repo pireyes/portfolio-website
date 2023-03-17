@@ -7,8 +7,9 @@ Secondary Color (Green): #489c79;
   box-sizing: border-box;
 }
 body {
-    background-color: #eaeaea;
-    font-family: 'Abel', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -17,7 +18,11 @@ body {
   
   h1, h2, h3, h4 {
     line-height: 1.4;
-    font-family: 'Abel', sans-serif;  }
+    font-family: 'Rubik', sans-serif;  }
+    p {
+      font-family: 'Karla', sans-serif;
+      font-weight: 100;
+    }
   h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -113,16 +118,15 @@ a:focus {
 }
 .arrow {
   height: 100px;
-  width: 100px;
-  margin: auto;
-  display: block;
+  padding: 20px 0;
+  width: 100%;
 }
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
   header {
-    background-color: #eaeaea;
+    background-color: #ffffff;
     padding: 10px 0;
     position: sticky;
 }
@@ -147,16 +151,22 @@ a:focus {
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 60px;
   margin: 0;
-  padding: 0.67em 0;
+  padding: 0;
+  color: #ef0303
 }
 #hero {
-    background-color: #eaeaea;
+    background-color: #ffffff;
     padding: 20px 0;
     display: inline-block;
     text-align: center;
     width: 100%;
+  }
+  #hero p {
+    font-family: 'Karla', sans-serif;
+    font-weight: thin;
   }
   #hero span {
     display: block;
@@ -234,7 +244,6 @@ Large devices (1024px or larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
